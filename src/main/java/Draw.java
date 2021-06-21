@@ -5,7 +5,7 @@ import java.util.*;
 @Component
 public class Draw {
 
-    @Autowired
+
     private final DrawType type;
     private Set<Integer> winningNumbers;
 
