@@ -1,5 +1,6 @@
 package controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.Mapping;
@@ -13,19 +14,18 @@ import java.io.PrintWriter;
 
 @Controller
 public class LoginControl {
+    private UserDao dao;
 
-    @GetMapping("/loginControl")
+    @Autowired
+    public LoginControl(UserDao dao) {
+        this.dao = dao;
+    }
+
+    @PostMapping("/loginControl")
     public void processFormData(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        if (dao.findUserByEmail(request.getParameter("email")) != null) {
+        }
 
-
-        response.setContentType("text/html");
-        response.setCharacterEncoding("UTF-8");
-
-        PrintWriter out = response.getWriter();
-        out.println("<html><head><title>Welcome Mate</title>");
-        out.println("<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css\">");
-        out.println("<body>" + "<p>Siskebab</p>");
-        out.println("</body></html>");
     }
 
 }
