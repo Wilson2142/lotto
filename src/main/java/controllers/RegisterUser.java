@@ -40,7 +40,7 @@ public class RegisterUser {
             session.setAttribute("user", user);
             session.setAttribute("errorMsg", "");
 
-            return "redirect:/";
+            return "redirect:/index.html";
         } else {
             session.setAttribute("errorMsg", "There is a user with the same e-mail address!");
             return "redirect:/register";
