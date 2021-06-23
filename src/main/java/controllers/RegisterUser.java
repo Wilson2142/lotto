@@ -34,6 +34,6 @@ public class RegisterUser {
         } else {
             session.setAttribute("errorMsg", "There is a user with the same e-mail address!");
         }
-        return "redirect:/index.html";
+        return "forward:/index.html";
     }
 }
