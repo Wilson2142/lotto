@@ -5,3 +5,7 @@ G
 src/main/java/Draw.java,5/d/5d1430eb0083bdab42bb2e2faf3590077d9beb90
 K
 src/main/java/DrawType.java,a/3/a39f608f9e0affa778805a6b937e6cc393c5414d
+V
+&src/main/java/controllers/UserDao.java,a\e\ae55cd1522bb9b9f61d2beb930746632431f3b81
+S
+#src/main/java/controllers/User.java,6\a\6ae9702936e82c5c85de89d83c0d4dae80cfd1d6

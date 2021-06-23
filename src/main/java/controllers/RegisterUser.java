@@ -1,17 +1,13 @@
 package controllers;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 @Controller
-@RequestMapping("/register")
 public class RegisterUser {
 
     private UserDao dao;
@@ -20,9 +16,9 @@ public class RegisterUser {
         this.dao = dao;
     }
 
-
-    @PostMapping
+    @PostMapping("/register")
     public String registerUser(HttpServletRequest req, HttpServletResponse resp) {
+
         HttpSession session = req.getSession();
         String email = req.getParameter("emailReg");
         if (dao.findUserByEmail(email) == null) {
@@ -34,6 +30,6 @@ public class RegisterUser {
         } else {
             session.setAttribute("errorMsg", "There is a user with the same e-mail address!");
         }
-        return "forward:/index.html";
+        return "redirect:/index.html";
     }
 }
