@@ -1,3 +1,5 @@
+package controllers;
+
 import org.springframework.stereotype.Component;
 
 import javax.persistence.EntityManager;
@@ -10,7 +12,7 @@ import java.util.List;
 @Transactional
 public class UserDao {
 
-        @PersistenceContext
+    @PersistenceContext
         private EntityManager em;
 
         public void save(User user) {

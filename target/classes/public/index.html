@@ -2,37 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Proglottó</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Lottery login</title>
 </head>
 <body>
-<h1>Register</h1>
 <div class="container">
-    <form action="\formControl" method="post" class="form-horizontal">
-        <div class="form-group">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" placeholder="Email">
+    <div class="form" method="post" action="\login">
+        <div class="form-control">
+            <label for="email"</label>>
+            <input type="email" name="email" id="email">
         </div>
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" name="name" class="form-control" id="name">
+        <div class="form-control">
+            <label for="password"></label>
+            <input type="password" name="password" id="password">
         </div>
-        <div class="form-group">
-            <label for="password">Name</label>
-            <input type="password" name="password" class="form-control" id="password">
-        </div>
-        <div class="form-group">
-            <label for="repassword">Name</label>
-            <input type="password" name="repassword" class="form-control" id="repassword">
-        </div>
-        <div class="checkbox">
-            <label>
-                <input type="checkbox"> Szeretem a sajtot
-            </label>
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-    </form>
+    </div>
+
+    <a href="\register">Register</a>
 </div>
 </body>
 </html>

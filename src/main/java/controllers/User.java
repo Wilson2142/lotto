@@ -1,3 +1,5 @@
+package controllers;
+
 import javax.persistence.*;
 
 @Entity
@@ -5,21 +7,20 @@ import javax.persistence.*;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY);
-    @Column(name="id");
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
-    @Column(name="email")
+    @Column(name = "email", unique = true)
     private String email;
-    @Column(name="name")
+    @Column(name = "name")
     private String name;
-    @Column(name="password")
+    @Column(name = "password")
     private String password;
 
     public User() {
     }
 
-    public User(Integer id, String email, String name, String password) {
-        this.id = id;
+    public User(String email, String name, String password) {
         this.email = email;
         this.name = name;
         this.password = password;
