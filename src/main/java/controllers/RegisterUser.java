@@ -1,5 +1,6 @@
 package controllers;
 
+import org.apache.catalina.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,9 +15,9 @@ public class RegisterUser {
     @Controller
     @RequestMapping("/register")
 
-    private Dao dao;
+    private UserDao dao;
 
-    public RegisterUser(Dao dao) {
+    public RegisterUser(UserDao dao) {
         this.dao = dao;
     }
 
@@ -35,7 +36,7 @@ public class RegisterUser {
                     req.getParameter("email"),
                     req.getParameter("password"),
                     req.getParameter("repassword"),
-            userJpaDao.save(user);
+            dao.save(user);
 
             session.setAttribute("user", user);
             session.setAttribute("errorMsg", "");
