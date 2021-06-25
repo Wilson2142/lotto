@@ -1,14 +1,14 @@
-package lottery.controllers;
+package lottery.domain;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "users")
-public class User {
+public class Account {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "account_id")
     private Integer id;
     @Column(name = "email", unique = true)
     private String email;
@@ -17,10 +17,10 @@ public class User {
     @Column(name = "password")
     private String password;
 
-    public User() {
+    public Account() {
     }
 
-    public User(String email, String name, String password) {
+    public Account(String email, String name, String password) {
         this.email = email;
         this.name = name;
         this.password = password;

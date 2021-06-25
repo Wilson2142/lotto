@@ -8,8 +8,8 @@
         <version>2.5.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
-    <artifactId>fundraiser</artifactId>
+    <groupId>com.lottery</groupId>
+    <artifactId>Lottery</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>fundraiser</name>
     <description>First full-stack project</description>
