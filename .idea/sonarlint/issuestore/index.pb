@@ -11,5 +11,3 @@ _
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 r
 Bsrc/main/java/lottery/validators/AccountRegistrationValidator.java,2/0/205a16b93a327ff3e1bfa8287f4f52646e6a2961
-^
-.src/main/java/lottery/controllers/UserDao.java,e/a/eac6ab4bb82d82285372fbed650dc4a7280838fd
