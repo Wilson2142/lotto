@@ -14,16 +14,14 @@ public class Account {
     private String email;
     @Column(name = "name")
     private String name;
-    @Column(name = "password")
-    private String password;
+    @Column(name = "ipAddress")
 
     public Account() {
     }
 
-    public Account(String email, String name, String password) {
+    public Account(String email, String name) {
         this.email = email;
         this.name = name;
-        this.password = password;
     }
 
     public Integer getId() {
@@ -50,11 +48,4 @@ public class Account {
         this.name = name;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }
