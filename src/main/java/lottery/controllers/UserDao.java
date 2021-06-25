@@ -1,4 +1,4 @@
-package controllers;
+package lottery.controllers;
 
 import org.springframework.stereotype.Component;
 

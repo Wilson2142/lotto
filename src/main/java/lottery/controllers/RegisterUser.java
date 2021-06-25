@@ -1,9 +1,8 @@
-package controllers;
+package lottery.controllers;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -19,7 +18,6 @@ public class RegisterUser {
     public RegisterUser(UserDao dao) {
         this.dao = dao;
     }
-
 
     @PostMapping
     public String registerUser(HttpServletRequest req, HttpServletResponse resp) {

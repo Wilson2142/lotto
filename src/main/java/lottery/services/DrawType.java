@@ -1,3 +1,5 @@
+package lottery.services;
+
 public enum DrawType {
     SCANDINAVIAN(35,7);
 

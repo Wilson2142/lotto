@@ -1,15 +1,17 @@
+package lottery.services;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.*;
 @Component
-public class Draw {
+public class DrawService {
 
 
     private final DrawType type;
     private Set<Integer> winningNumbers;
 
-    public Draw() {
+    public DrawService() {
         this.type = DrawType.SCANDINAVIAN;
         this.winningNumbers = new HashSet<>();
     }

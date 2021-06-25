@@ -1,4 +1,4 @@
-package controllers;
+package lottery.controllers;
 
 import javax.persistence.*;
 
