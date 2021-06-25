@@ -1,7 +1,7 @@
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/Lottery?serverTimezone=UTC&useSSL=false
-    username: root
+    username: rooty
     password: test1234
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:

@@ -8,8 +8,13 @@ server:
 
 spring:
   datasource:
+<<<<<<< HEAD
     url: jdbc:mysql://localhost:3306/fundraiser?serverTimezone=UTC&useSSL=false
     username: root
+=======
+    url: jdbc:mysql://localhost:3306/Lottery?serverTimezone=UTC&useSSL=false
+    username: rooty
+>>>>>>> d756a7cb91b3a9f9cc9a19233be3633250a7cc66
     password: test1234
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
