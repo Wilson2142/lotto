@@ -1,6 +1,7 @@
 package lottery.domain;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -15,14 +16,9 @@ public class Account {
     @Column(name = "name")
     private String name;
     @Column(name = "ipAddress")
-
-    public Account() {
-    }
-
-    public Account(String email, String name) {
-        this.email = email;
-        this.name = name;
-    }
+    private String ipAddress;
+    @Column(name="ticket_list")
+    private List<Ticket> ticketList;
 
     public Integer getId() {
         return id;
@@ -48,4 +44,19 @@ public class Account {
         this.name = name;
     }
 
+    public String getIpAddress() {
+        return ipAddress;
+    }
+
+    public void setIpAddress(String ipAddress) {
+        this.ipAddress = ipAddress;
+    }
+
+    public List<Ticket> getTicketList() {
+        return ticketList;
+    }
+
+    public void setTicketList(List<Ticket> ticketList) {
+        this.ticketList = ticketList;
+    }
 }
